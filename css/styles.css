@@ -336,7 +336,7 @@ h3 { font-size: 1.35rem; }
   padding: 5px 14px; border-radius: 999px;
 }
 .plan__name { font-weight: 700; color: var(--navy-900); font-size: 1.15rem; }
-.plan__price { font-size: 2.4rem; font-weight: 800; color: var(--navy-900); margin: 14px 0 4px; letter-spacing: -0.02em; }
+.plan__price { font-size: 1.65rem; font-weight: 800; color: var(--navy-900); margin: 14px 0 6px; letter-spacing: -0.02em; }
 .plan__price small { font-size: 0.95rem; font-weight: 500; color: var(--slate-500); }
 .plan__desc { font-size: 0.95rem; color: var(--slate-500); margin-bottom: 22px; }
 .plan ul { display: grid; gap: 12px; margin-bottom: 28px; }

@@ -65,7 +65,7 @@ The site is fully functional but uses **placeholder business details**. Search a
 | `https://www.conwellcpa.com` | Your real domain (in canonical, OG, sitemap, robots) |
 | Testimonials (Maria Reyes, James Tran, Diane Whitfield) | Real client reviews (with permission) |
 | Stats ($8.4M saved, 96% retention, etc.) | Real, defensible numbers — or remove them |
-| Pricing ($300/return, $450/mo) | Your real pricing — or keep "Custom" |
+| Package names/features in the pricing section | Tailor to your real packages (all show "Request a Quote") |
 
 > ⚠️ The statistics, testimonials, and pricing are **illustrative samples**. Replace them with accurate figures before publishing — don't advertise numbers you can't back up.
 
