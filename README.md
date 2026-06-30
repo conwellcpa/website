@@ -75,7 +75,7 @@ The site is fully functional but uses **placeholder business details**. Search a
 | `hello@conwellcpa.com` | Your real email |
 | `100 Commerce Street, Suite 400, Springfield, IL 62701` | Your real address |
 | `https://www.conwellcpa.com` | Your real domain (already set; verify in canonical, OG, sitemap, robots) |
-| `AICPA Member` (trust strip, About) | Confirm membership, or remove if not current |
+| CPA licensure (`New York State`) | Update if/when you transfer your license to another state (e.g. Florida) |
 | Client quotes on Home ("Business owner", "High-income individual") | Real, anonymized client quotes (with permission) |
 | Insight article titles on `insights.html` | Your real articles, or trim the list until you publish |
 
