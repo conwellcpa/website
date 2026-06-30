@@ -73,7 +73,7 @@ The site is fully functional but uses **placeholder business details**. Search a
 |-------------|--------------|
 | `(555) 014-2025` and `tel:+15550142025` | Your real phone number |
 | `hello@conwellcpa.com` | Your real email |
-| `100 Commerce Street, Suite 400, Springfield, IL 62701` | Your real address |
+| `72 Bronson Ln, Palm Coast, FL 32137` | Currently the home address (temporary). Swap to the virtual-office address when it's set up, and update the `geo` coordinates in `index.html` JSON-LD to match |
 | `https://www.conwellcpa.com` | Your real domain (already set; verify in canonical, OG, sitemap, robots) |
 | CPA licensure (`New York State`) | Update if/when you transfer your license to another state (e.g. Florida) |
 | Client quotes on Home ("Business owner", "High-income individual") | Real, anonymized client quotes (with permission) |
