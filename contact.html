@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — Christopher Conwell, CPA PC</title>
-  <meta name="description" content="Get in touch with Christopher Conwell, CPA PC. Schedule a free consultation for bookkeeping, tax preparation, or tax planning. Same-day response during business hours." />
+  <title>Book a Strategy Call — Christopher Conwell, CPA PC</title>
+  <meta name="description" content="Request a strategy call with Christopher Conwell, CPA PC. A focused, no-cost conversation for business owners and high-income individuals to see if we're a fit." />
   <link rel="canonical" href="https://www.conwellcpa.com/contact.html" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body>
-  <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="Christopher Conwell, CPA PC home">
@@ -22,33 +21,32 @@
         <span class="brand__name">Christopher&nbsp;Conwell<span>CPA, PC</span></span>
       </a>
       <nav class="nav__links" aria-label="Primary">
-        <a href="index.html">Home</a>
         <a href="services.html">Services</a>
+        <a href="advisory.html">Advisory</a>
+        <a href="process.html">Process</a>
+        <a href="insights.html">Insights</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a class="btn btn--primary nav__cta" href="contact.html">Free Consultation</a>
+        <a class="btn btn--primary nav__cta" href="contact.html">Book a Strategy Call</a>
       </nav>
       <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </header>
 
   <main>
-    <!-- ===== Page hero ===== -->
     <section class="page-hero">
       <div class="container">
         <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
-        <h1>Let's get started</h1>
-        <p>Schedule a free 30-minute consultation or send a message. We respond the same business day.</p>
+        <h1>Book a strategy call</h1>
+        <p>A focused, no-cost conversation about your situation — and an honest read on whether we're the right firm for you. Tell us a little below and we'll be in touch within one business day.</p>
       </div>
     </section>
 
-    <!-- ===== Contact form + details ===== -->
     <section class="section" id="consult">
       <div class="container form-wrap">
         <div class="reveal">
-          <h2 style="margin-bottom:8px">Send a message</h2>
-          <p class="lead" style="margin-bottom:28px">Tell us a little about what you need and we'll be in touch shortly.</p>
-          <!-- To make this form deliver email, set the action to your form provider
+          <h2 style="margin-bottom:8px">Tell us about your situation</h2>
+          <p class="lead" style="margin-bottom:28px">The more context you can share, the more useful our first conversation will be.</p>
+          <!-- To deliver these submissions, set the form's action to your provider
                (e.g. Formspree) or add Netlify Forms attributes. See README.md. -->
           <form class="form" data-contact-form action="#" method="POST" novalidate>
             <div class="field--row">
@@ -65,32 +63,44 @@
               <label for="email">Email</label>
               <input type="email" id="email" name="email" autocomplete="email" required placeholder="jane@example.com" />
             </div>
-            <div class="field">
-              <label for="service">What can we help with?</label>
-              <select id="service" name="service">
-                <option value="">Select a service…</option>
-                <option>Bookkeeping</option>
-                <option>Tax preparation</option>
-                <option>Tax planning</option>
-                <option>Payroll</option>
-                <option>IRS / state notice</option>
-                <option>New business setup</option>
-                <option>Something else</option>
-              </select>
+            <div class="field--row">
+              <div class="field">
+                <label for="profile">This describes me best</label>
+                <select id="profile" name="profile">
+                  <option value="">Select…</option>
+                  <option>Business owner</option>
+                  <option>Multi-entity / multiple businesses</option>
+                  <option>High-income individual</option>
+                  <option>Founder planning an exit</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="focus">What's prompting the search</label>
+                <select id="focus" name="focus">
+                  <option value="">Select…</option>
+                  <option>Want proactive tax planning</option>
+                  <option>Outgrew my current accountant</option>
+                  <option>New or restructuring entity</option>
+                  <option>Books / accounting are behind</option>
+                  <option>IRS or state notice</option>
+                  <option>Preparing for a sale or transition</option>
+                </select>
+              </div>
             </div>
             <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required placeholder="Tell us about your situation, timeline, and any questions you have…"></textarea>
+              <label for="message">Anything else worth knowing</label>
+              <textarea id="message" name="message" required placeholder="A few sentences on your business, structure, and what you're hoping to solve…"></textarea>
             </div>
-            <button type="submit" class="btn btn--primary btn--lg">Send Message</button>
+            <button type="submit" class="btn btn--primary btn--lg">Request My Strategy Call</button>
             <p class="form-status" role="status" aria-live="polite"></p>
-            <p class="form__note">By submitting, you agree to be contacted about your inquiry. We never share your information.</p>
+            <p class="form__note">Your information is kept confidential and is never shared. Submitting this form doesn't create a client relationship.</p>
           </form>
         </div>
 
         <aside class="reveal">
-          <h2 style="margin-bottom:8px">Contact details</h2>
-          <p class="lead" style="margin-bottom:20px">Prefer to call or email? We're happy to hear from you directly.</p>
+          <h2 style="margin-bottom:8px">Reach us directly</h2>
+          <p class="lead" style="margin-bottom:20px">Prefer to call or email? You'll reach the firm directly — not a call center.</p>
           <div class="contact-detail">
             <span class="contact-detail__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
             <div><strong>Phone</strong><a href="tel:+15550142025">(555) 014-2025</a></div>
@@ -105,31 +115,30 @@
           </div>
           <div class="contact-detail">
             <span class="contact-detail__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
-            <div><strong>Hours</strong><span>Mon–Fri, 8:30am – 5:30pm<br />Extended hours during tax season</span></div>
+            <div><strong>Response time</strong><span>Within one business day<br />Mon–Fri, 8:30am – 5:30pm</span></div>
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- ===== FAQ ===== -->
+    <!-- FAQ -->
     <section class="section section--tint">
       <div class="container">
         <div class="section-head section-head--center">
-          <span class="eyebrow">Questions</span>
-          <h2>Frequently asked</h2>
+          <span class="eyebrow">Before You Reach Out</span>
+          <h2>Questions we're often asked</h2>
         </div>
         <div class="faq">
-          <details class="reveal"><summary>Is the first consultation really free?</summary><p>Yes. The initial 30-minute consultation is completely free with no obligation. It's a chance for us to understand your situation and for you to decide if we're the right fit.</p></details>
-          <details class="reveal"><summary>Do you work with clients in other states?</summary><p>Absolutely. With our secure online portal and e-signature, we serve clients wherever they are. Federal returns are the same nationwide, and we handle multi-state filings regularly.</p></details>
-          <details class="reveal"><summary>How much do your services cost?</summary><p>Individual returns start at a flat fee, and business clients typically work on a flat monthly package. We always quote you up front after the consultation — no hourly surprises.</p></details>
-          <details class="reveal"><summary>I'm behind on bookkeeping and past returns. Can you help?</summary><p>Yes — catch-up and cleanup work is one of our specialties. We'll bring your books current and file any missing or amended returns to get you back on track.</p></details>
-          <details class="reveal"><summary>How do I send you my documents securely?</summary><p>After onboarding, you'll get access to an encrypted client portal where you can upload documents, sign forms, and message us securely — no emailing sensitive files.</p></details>
+          <details class="reveal"><summary>What happens on the first call?</summary><p>We talk through your situation — your business, structure, and what's prompting the search — and give you an honest read on whether we can genuinely help. There's no cost and no obligation, and if we're not the right fit, we'll say so.</p></details>
+          <details class="reveal"><summary>How do you charge?</summary><p>Engagements are quoted as a flat fee after we understand your situation — annual for individuals, monthly for businesses. You'll always know the number before any work begins, and routine questions never restart a meter.</p></details>
+          <details class="reveal"><summary>Do you work with clients in other states?</summary><p>Yes. With a secure portal and e-signature, we work with clients wherever they're based, and we handle multi-state filings routinely.</p></details>
+          <details class="reveal"><summary>Can you take over from my current accountant?</summary><p>Often, yes — transitions are common and we manage them so nothing slips. We'll review your recent returns and books as part of the diagnostic before anything changes.</p></details>
+          <details class="reveal"><summary>I'm behind on books or past filings. Is that a problem?</summary><p>Not at all. Cleanup and catch-up are a normal starting point. We'll bring things current and put a structure in place so they stay that way.</p></details>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ===== Footer ===== -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -138,21 +147,21 @@
             <img class="brand__mark" src="assets/logo.svg" alt="" width="44" height="44" />
             <span class="brand__name" style="color:#fff">Christopher&nbsp;Conwell<span>CPA, PC</span></span>
           </a>
-          <p class="footer-about">Proactive bookkeeping, tax preparation, and tax planning for individuals and growing businesses. Licensed, local, and here for you year-round.</p>
+          <p class="footer-about">Tax strategy, planning, and advisory for business owners and high-income individuals. A focused practice built on judgment, access, and long-term partnership.</p>
         </div>
         <div class="footer-col">
           <h4>Services</h4>
-          <a href="services.html#bookkeeping">Bookkeeping</a>
-          <a href="services.html#tax-prep">Tax Preparation</a>
-          <a href="services.html#tax-planning">Tax Planning</a>
-          <a href="services.html#more">Additional Services</a>
+          <a href="advisory.html">Tax Planning &amp; Strategy</a>
+          <a href="services.html#preparation">Tax Preparation</a>
+          <a href="services.html#bookkeeping">Bookkeeping &amp; Accounting</a>
+          <a href="services.html">All Services</a>
         </div>
         <div class="footer-col">
-          <h4>Company</h4>
+          <h4>Firm</h4>
           <a href="about.html">About</a>
-          <a href="services.html">Services</a>
+          <a href="process.html">Process</a>
+          <a href="insights.html">Insights</a>
           <a href="contact.html">Contact</a>
-          <a href="contact.html#consult">Free Consultation</a>
         </div>
         <div class="footer-col">
           <h4>Get in touch</h4>
@@ -165,7 +174,7 @@
         <span>&copy; <span data-year>2026</span> Christopher Conwell, CPA PC. All rights reserved.</span>
         <span><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></span>
       </div>
-      <p class="footer-disclaimer">The content on this website is for general informational purposes only and does not constitute tax, accounting, or legal advice. Please consult Christopher Conwell, CPA PC directly regarding your specific situation. Pricing and statistics shown are illustrative.</p>
+      <p class="footer-disclaimer">The content on this website is for general informational purposes only and does not constitute tax, accounting, or legal advice. Please consult Christopher Conwell, CPA PC directly regarding your specific situation.</p>
     </div>
   </footer>
 

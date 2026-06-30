@@ -1,17 +1,26 @@
 # Christopher Conwell, CPA PC — Website
 
-A fast, professional, fully responsive marketing website for **Christopher Conwell, CPA PC**, focused on the firm's three core services: **bookkeeping, tax preparation, and tax planning**.
+A fast, premium, fully responsive website for **Christopher Conwell, CPA PC** — a **tax strategy and advisory** practice for **business owners and high-income individuals**. The site is positioned to establish credibility, differentiate from commodity tax preparers, pre-qualify leads, and drive serious prospects to a strategy call.
 
 Built as a zero-dependency static site (plain HTML, CSS, and JavaScript) so it loads instantly, costs almost nothing to host, and is easy to maintain.
 
+## Positioning
+
+- **Audience:** business owners (S-corps, partnerships, multi-entity), high-income individuals, founders preparing to exit.
+- **Tone:** premium, calm, confident, advisory-led — not a low-cost prep shop.
+- **Conversion goal:** qualified discovery calls ("Book a Strategy Call"), with soft qualification ("see if we're a fit") to filter low-value leads.
+
 ## Pages
 
-| File | Purpose |
-|------|---------|
-| `index.html` | Home — hero, services overview, stats, why-us, process, pricing, testimonials, CTA |
-| `services.html` | Detailed breakdown of bookkeeping, tax prep, tax planning + supporting services |
-| `about.html` | Firm story, values, and credentials |
-| `contact.html` | Contact form, contact details, and FAQ |
+| File | Purpose / conversion goal |
+|------|---------------------------|
+| `index.html` | Home — positioning, preparer-vs-strategist contrast, services, fit/qualification, process preview, client words, insights preview, CTA |
+| `services.html` | The three disciplines (planning, preparation, bookkeeping) as one integrated engagement + supporting capabilities |
+| `advisory.html` | The differentiator — proactive, multi-year tax strategy and the quarterly planning cycle |
+| `process.html` | The engagement path from strategy call to ongoing partner; reduces risk/objection |
+| `insights.html` | Authority-building article listing (placeholder articles ready to fill in) |
+| `about.html` | Firm philosophy, principles, and credentials |
+| `contact.html` | Strategy-call request with light qualification fields + FAQ |
 | `404.html` | Friendly not-found page |
 
 ## Project structure
@@ -20,11 +29,14 @@ Built as a zero-dependency static site (plain HTML, CSS, and JavaScript) so it l
 .
 ├── index.html
 ├── services.html
+├── advisory.html
+├── process.html
+├── insights.html
 ├── about.html
 ├── contact.html
 ├── 404.html
-├── css/styles.css      # Design system + all styles
-├── js/main.js          # Mobile nav, scroll reveal, counters, form handling
+├── css/styles.css      # Design system + all styles (serif display headings, premium components)
+├── js/main.js          # Mobile nav, scroll reveal, form handling
 ├── assets/
 │   ├── logo.svg        # Header logo
 │   └── favicon.svg     # Browser tab icon
@@ -62,12 +74,12 @@ The site is fully functional but uses **placeholder business details**. Search a
 | `(555) 014-2025` and `tel:+15550142025` | Your real phone number |
 | `hello@conwellcpa.com` | Your real email |
 | `100 Commerce Street, Suite 400, Springfield, IL 62701` | Your real address |
-| `https://www.conwellcpa.com` | Your real domain (in canonical, OG, sitemap, robots) |
-| Testimonials (Maria Reyes, James Tran, Diane Whitfield) | Real client reviews (with permission) |
-| Stats ($8.4M saved, 96% retention, etc.) | Real, defensible numbers — or remove them |
-| Package names/features in the pricing section | Tailor to your real packages (all show "Request a Quote") |
+| `https://www.conwellcpa.com` | Your real domain (already set; verify in canonical, OG, sitemap, robots) |
+| `15+ Years in Practice` / `AICPA Member` (trust strip, About) | Your real tenure and memberships |
+| Client quotes on Home ("Business owner", "High-income individual") | Real, anonymized client quotes (with permission) |
+| Insight article titles on `insights.html` | Your real articles, or trim the list until you publish |
 
-> ⚠️ The statistics, testimonials, and pricing are **illustrative samples**. Replace them with accurate figures before publishing — don't advertise numbers you can't back up.
+> ⚠️ The client quotes and credentials are **illustrative**. Confirm every credential is accurate and only publish testimonials you have permission to use. There are deliberately **no fabricated statistics or dollar figures** anywhere on the site — keep it that way.
 
 ## Making the contact form actually send email
 
