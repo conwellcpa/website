@@ -13,4 +13,6 @@
   <url><loc>https://www.conwellcpa.com/insight-exit-planning.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.conwellcpa.com/about.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.conwellcpa.com/contact.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.conwellcpa.com/privacy.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.conwellcpa.com/terms.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
 </urlset>
