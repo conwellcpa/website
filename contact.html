@@ -81,9 +81,14 @@
         <div class="reveal">
           <h2 style="margin-bottom:8px">Tell us about your situation</h2>
           <p class="lead" style="margin-bottom:28px">The more context you can share, the more useful our first conversation will be.</p>
-          <!-- To deliver these submissions, set the form's action to your provider
-               (e.g. Formspree) or add Netlify Forms attributes. See README.md. -->
-          <form class="form" data-contact-form action="#" method="POST" novalidate>
+          <!-- Wired to Netlify Forms: submissions appear in the Netlify dashboard
+               (Forms tab) and can be emailed to you via a notification. -->
+          <form class="form" data-contact-form name="contact" method="POST"
+                action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hp-field" hidden>
+              <label>Leave this field empty: <input name="bot-field" /></label>
+            </p>
             <div class="field--row">
               <div class="field">
                 <label for="name">Full name</label>

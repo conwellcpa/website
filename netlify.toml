@@ -1,0 +1,40 @@
+# Netlify configuration for Christopher Conwell, CPA PC
+# Static site — no build step. See README.md for deploy + DNS steps.
+
+[build]
+  publish = "."
+  command = ""
+
+# Redirect the bare domain to the canonical www host (matches canonical tags).
+# Set www.conwellcpa.com as the primary domain in the Netlify UI as well.
+[[redirects]]
+  from = "https://conwellcpa.com/*"
+  to = "https://www.conwellcpa.com/:splat"
+  status = 301
+  force = true
+
+# Security headers applied to every response.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Long-lived caching for static assets that rarely change.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Shorter cache for CSS/JS so style/script updates go live promptly.
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"

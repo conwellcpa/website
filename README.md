@@ -54,16 +54,39 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-## Deploying
+## Deploying to Netlify + connecting conwellcpa.com
 
-Because it's static, you can host it almost anywhere for free or near-free:
+This repo includes a `netlify.toml` (publish settings, apex→www redirect, security
+headers, caching), so there's nothing to configure at build time.
 
-- **Netlify** — drag-and-drop the folder, or connect this repo. Auto-deploys on push.
-- **Vercel** — import the repo; no build settings needed.
-- **GitHub Pages** — enable Pages on this repo (serve from the branch root).
-- **Cloudflare Pages / Amazon S3 + CloudFront** — upload the files.
+**1. Deploy the site**
+1. Sign in at [netlify.com](https://www.netlify.com) and choose **Add new site → Import
+   an existing project**.
+2. Connect **GitHub** and pick the `conwellcpa/website` repo.
+3. Leave build command empty and publish directory as `.` (the `netlify.toml`
+   already sets this). Click **Deploy**. You'll get a temporary URL like
+   `something.netlify.app` to preview.
 
-No build step is required.
+**2. Connect your domain (canonical host is `www.conwellcpa.com`)**
+1. In Netlify: **Domain settings → Add a domain →** enter `conwellcpa.com`.
+2. Set **`www.conwellcpa.com` as the primary domain** (Netlify auto-redirects the
+   bare `conwellcpa.com` to it; the `netlify.toml` reinforces this).
+3. Netlify shows the DNS records to add. Two options:
+   - **Easiest:** use **Netlify DNS** — point your registrar's nameservers to the
+     ones Netlify gives you.
+   - **Or keep your registrar's DNS:** add a `CNAME` for `www` → your Netlify
+     subdomain, and an `A`/`ALIAS` record for the apex per Netlify's instructions.
+4. Netlify provisions **HTTPS (Let's Encrypt) automatically** — usually minutes,
+   sometimes up to a few hours after DNS propagates.
+
+**3. After it's live**
+- Submit `https://www.conwellcpa.com/sitemap.xml` in Google Search Console.
+- Add your GA4 measurement ID (see the SEO section).
+
+Every push to the repo's default branch will auto-deploy.
+
+> Other hosts (Vercel, Cloudflare Pages, GitHub Pages) also work — it's plain static
+> files — but the included config and steps are written for Netlify.
 
 ## Before you go live — replace the placeholders
 
@@ -81,25 +104,24 @@ The site is fully functional but uses **placeholder business details**. Search a
 
 > ⚠️ The client quotes and credentials are **illustrative**. Confirm every credential is accurate and only publish testimonials you have permission to use. There are deliberately **no fabricated statistics or dollar figures** anywhere on the site — keep it that way.
 
-## Making the contact form actually send email
+## The contact form (already wired to Netlify Forms)
 
-Right now the form shows a confirmation message but does **not** deliver email (it's a static site with no backend). Pick one of these no-code options:
+The contact form in `contact.html` is set up for **Netlify Forms** — no third-party
+service or code needed. It has `data-netlify="true"`, a hidden `form-name` field, a
+honeypot (`bot-field`) for spam, and it redirects to `thank-you.html` on success.
 
-### Option A — Formspree (easiest)
-1. Create a free form at [formspree.io](https://formspree.io).
-2. In `contact.html`, change the form tag's `action` to your endpoint:
-   ```html
-   <form class="form" data-contact-form action="https://formspree.io/f/YOUR_ID" method="POST">
-   ```
-   (When a real `action` is set, `js/main.js` lets the browser submit it normally.)
+Once the site is deployed to Netlify:
+1. Netlify auto-detects the form at deploy time (it appears under **Forms** in the
+   dashboard). Submissions are stored there.
+2. To get **emailed** when someone submits: **Forms → Settings → Form notifications
+   → Add notification → Email**, and enter the address you want submissions sent to.
+3. The free tier covers ~100 submissions/month, which is plenty for a lead form.
 
-### Option B — Netlify Forms (if hosting on Netlify)
-1. Add `netlify` to the form tag:
-   ```html
-   <form class="form" data-contact-form name="contact" method="POST" data-netlify="true">
-   ```
-2. Add a hidden field inside the form: `<input type="hidden" name="form-name" value="contact" />`
-3. Netlify captures submissions automatically — view them in your dashboard.
+Test it by submitting the live form once after deploy — the entry should show up in
+the Netlify **Forms** tab and you should land on the thank-you page.
+
+> Not hosting on Netlify? Swap in [Formspree](https://formspree.io): set the form's
+> `action` to your Formspree endpoint and remove the `data-netlify` attribute.
 
 ## Customizing the look
 
