@@ -90,17 +90,17 @@ Every push to the repo's default branch will auto-deploy.
 
 ## Before you go live — replace the placeholders
 
-The site is fully functional but uses **placeholder business details**. Search and replace these across the `.html` files:
+Most real business details are now in place. A few items are still worth
+reviewing before or shortly after launch:
 
-| Placeholder | Replace with |
-|-------------|--------------|
-| `(555) 014-2025` and `tel:+15550142025` | Your real phone number |
-| `hello@conwellcpa.com` | Your real email |
+| Item | Notes |
+|------|-------|
+| Phone `(631) 294-2950`, email `chris@conwellcpa.com` | Real — set. Make sure the email inbox exists before launch so form/notification mail is received |
 | `72 Bronson Ln, Palm Coast, FL 32137` | Currently the home address (temporary). Swap to the virtual-office address when it's set up, and update the `geo` coordinates in `index.html` JSON-LD to match |
-| `https://www.conwellcpa.com` | Your real domain (already set; verify in canonical, OG, sitemap, robots) |
-| CPA licensure (`New York State`) | Update if/when you transfer your license to another state (e.g. Florida) |
-| Client quotes on Home ("Business owner", "High-income individual") | Real, anonymized client quotes (with permission) |
-| Insight article titles on `insights.html` | Your real articles, or trim the list until you publish |
+| `https://www.conwellcpa.com` | Domain set throughout (canonical, OG, sitemap, robots) |
+| CPA licensure (`New York State`) | Update if/when you transfer your license to Florida |
+| Client quotes on Home ("Business owner", "High-income individual") | Illustrative — replace with real, anonymized quotes (with permission) or remove |
+| Insight article titles on `insights.html` | Four posts are live; the last two cards are honest "coming soon" stubs — write them or trim |
 
 > ⚠️ The client quotes and credentials are **illustrative**. Confirm every credential is accurate and only publish testimonials you have permission to use. There are deliberately **no fabricated statistics or dollar figures** anywhere on the site — keep it that way.
 
