@@ -18,19 +18,20 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
   <meta name="theme-color" content="#0b1f3a" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="Christopher Conwell, CPA PC home">
         <img class="brand__mark" src="assets/logo.svg" alt="" width="44" height="44" />
         <span class="brand__name">Christopher&nbsp;Conwell<span>CPA, PC</span></span>
       </a>
-      <nav class="nav__links" aria-label="Primary">
+      <nav id="primary-nav" class="nav__links" aria-label="Primary">
         <a href="services.html">Services</a>
         <a href="advisory.html">Advisory</a>
         <a href="process.html">Process</a>
@@ -38,14 +39,14 @@
         <a href="about.html">About</a>
         <a class="btn btn--primary nav__cta" href="contact.html">Book a Strategy Call</a>
       </nav>
-      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="page-hero">
       <div class="container">
-        <p class="breadcrumb"><a href="index.html">Home</a> / Advisory</p>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Advisory</span></nav>
         <h1>Advisory is the whole point. The return is just the receipt.</h1>
         <p>For business owners and high-income individuals, the difference between a good year and an expensive one is rarely the preparer's software. It's whether someone was thinking three moves ahead.</p>
       </div>
@@ -172,21 +173,21 @@
           <p class="footer-about">Tax strategy, planning, and advisory for business owners and high-income individuals. A focused practice built on judgment, access, and long-term partnership.</p>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
+          <p class="footer-col__title">Services</p>
           <a href="advisory.html">Tax Planning &amp; Strategy</a>
           <a href="services.html#preparation">Tax Preparation</a>
           <a href="services.html#bookkeeping">Bookkeeping &amp; Accounting</a>
           <a href="services.html">All Services</a>
         </div>
         <div class="footer-col">
-          <h4>Firm</h4>
+          <p class="footer-col__title">Firm</p>
           <a href="about.html">About</a>
           <a href="process.html">Process</a>
           <a href="insights.html">Insights</a>
           <a href="contact.html">Contact</a>
         </div>
         <div class="footer-col">
-          <h4>Get in touch</h4>
+          <p class="footer-col__title">Get in touch</p>
           <a href="tel:+16312942950">(631) 294-2950</a>
           <a href="mailto:chris@conwellcpa.com">chris@conwellcpa.com</a>
           <a href="https://www.google.com/maps/search/?api=1&query=72+Bronson+Ln+Palm+Coast+FL+32137" target="_blank" rel="noopener">72 Bronson Ln<br />Palm Coast, FL 32137</a>
