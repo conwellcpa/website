@@ -352,6 +352,25 @@ h3 { font-size: 1.3rem; }
   color: var(--gold-300);
 }
 
+/* Portrait photo frame (e.g. About headshot) */
+.photo-frame {
+  position: relative;
+  max-width: 420px;
+  margin-inline: auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 1 / 1;
+}
+.photo-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; }
+.photo-frame::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold-500), var(--gold-300));
+}
+
 /* ---------- Process steps ---------- */
 .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; counter-reset: step; }
 .step { position: relative; padding-top: 14px; }
